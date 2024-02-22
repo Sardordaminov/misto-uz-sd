@@ -1,0 +1,27 @@
+.footer-bottom{
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f8f8f8;
+}
+.footer-bottom-copyright{
+    font-size: 17px;
+    color: #000;
+    margin: 10px 0px;
+}
+.footer-bottom-payment-systems{
+    display: flex;
+    align-items: center;
+}
+.footer-bottom-payment-systems a{
+    margin: 10px;
+}
+.footer-bottom-designer{
+    color: #000;
+    font-size: 17px;
+    text-decoration: underline;
+    margin: 10px;
+}

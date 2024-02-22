@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "League Spartan";
+}
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1240px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}

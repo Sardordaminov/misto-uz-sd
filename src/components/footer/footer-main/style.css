@@ -1,0 +1,32 @@
+.footer-main {
+  max-width: 1240px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 27vh;
+}
+.footer-main-item {
+  margin: 20px 15px;
+}
+.footer-main-item h1 {
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+.footer-main-item a p {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: #0000006f;
+  &:hover {
+    color: #000000;
+  }
+}

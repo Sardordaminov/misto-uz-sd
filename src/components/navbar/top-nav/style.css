@@ -1,0 +1,33 @@
+.top-nav {
+  width: 100vw;
+  font-size: 15px;
+  background-color: #000;
+}
+.top-nav-container {
+  max-width: 1240px;
+  height: 35px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-nav-item {
+  display: flex;
+  color: #d0d0d0;
+}
+.top-nav-item p {
+  margin: 0px 10px;
+}
+.top-nav-item p i {
+  margin: 0px 5px;
+}
+.top-nav-item.sec a {
+  color: #d0d0d0;
+  margin: 0px 7px;
+}
+@media screen and (max-width: 768px) {
+  .top-nav {
+    display: none;
+  }
+}
