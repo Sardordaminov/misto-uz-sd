@@ -99,6 +99,13 @@ img {
 .product-card-price-rate h2 {
   font-size: 18px;
 }
+.rating {
+  display: flex;
+}
+.rating p {
+  margin-left: 7px;
+  color: #00000067;
+}
 .rating .fa-star {
   font-size: 10px;
   color: #e6e6e6;
