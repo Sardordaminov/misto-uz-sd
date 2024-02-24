@@ -1,0 +1,37 @@
+.modal {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal_content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 10px;
+  width: 700px;
+}
+
+.modal_content.active {
+  transform: translateY(0);
+}
+
+.create-login-btn {
+  cursor: pointer;
+}
+
+.modal_content input {
+}
