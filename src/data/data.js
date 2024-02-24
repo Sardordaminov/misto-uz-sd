@@ -26,7 +26,7 @@ export const products = [
         count: 1,
         selected: true,
         isFavourite: true,
-        category: 'women'
+        category: 'Women'
     },
     {
         id: 2,
@@ -40,7 +40,7 @@ export const products = [
         count: 1,
         selected: true,
         isFavourite: true,
-        category: 'women'
+        category: 'Women'
     },
     {
         id: 3,
@@ -52,7 +52,7 @@ export const products = [
         count: 1,
         selected: true,
         isFavourite: true,
-        category: 'women'
+        category: 'Women'
     },
     {
         id: 4,
@@ -64,7 +64,7 @@ export const products = [
         count: 1,
         selected: true,
         isFavourite: true,
-        category: 'women'
+        category: 'Women'
     },
     {
         id: 5,
@@ -76,7 +76,7 @@ export const products = [
         count: 1,
         selected: true,
         isFavourite: true,
-        category: 'women'
+        category: 'Women'
     },
     {
         id: 6,
@@ -88,7 +88,7 @@ export const products = [
         count: 1,
         selected: true,
         isFavourite: true,
-        category: 'women'
+        category: 'Women'
     },
     {
         id: 7,
@@ -100,7 +100,7 @@ export const products = [
         count: 1,
         selected: true,
         isFavourite: true,
-        category: 'women'
+        category: 'Women'
     },
     {
         id: 8,
@@ -112,7 +112,7 @@ export const products = [
         count: 1,
         selected: true,
         isFavourite: true,
-        category: 'women'
+        category: 'Women'
     },
 ]
 export const productsMen = [
@@ -126,7 +126,7 @@ export const productsMen = [
         count: 1,
         selected: true,
         isFavourite: true,
-        category: 'men'
+        category: 'Men'
     },
     {
         id: 2,
@@ -139,7 +139,7 @@ export const productsMen = [
         count: 1,
         selected: true,
         isFavourite: true,
-        category: 'men'
+        category: 'Men'
     },
     {
         id: 3,
@@ -151,7 +151,7 @@ export const productsMen = [
         count: 1,
         selected: true,
         isFavourite: true,
-        category: 'men'
+        category: 'Men'
     },
     {
         id: 4,
@@ -163,7 +163,7 @@ export const productsMen = [
         count: 1,
         selected: true,
         isFavourite: true,
-        category: 'men'
+        category: 'Men'
     },
     {
         id: 5,
@@ -175,7 +175,7 @@ export const productsMen = [
         count: 1,
         selected: true,
         isFavourite: true,
-        category: 'men'
+        category: 'Men'
     },
     {
         id: 6,
@@ -187,7 +187,7 @@ export const productsMen = [
         count: 1,
         selected: true,
         isFavourite: true,
-        category: 'men'
+        category: 'Men'
     },
     {
         id: 7,
@@ -199,7 +199,7 @@ export const productsMen = [
         count: 1,
         selected: true,
         isFavourite: true,
-        category: 'men'
+        category: 'Men'
     },
     {
         id: 8,
@@ -211,6 +211,6 @@ export const productsMen = [
         count: 1,
         selected: true,
         isFavourite: true,
-        category: 'men'
+        category: 'Men'
     },
 ]

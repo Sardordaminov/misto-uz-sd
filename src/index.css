@@ -17,3 +17,20 @@ body {
   margin: 0px auto;
   padding: 0px 15px;
 }
+.location {
+  width: 100%;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #000;
+}
+.location i {
+  margin: 0px 5px;
+}
+.location a {
+  color: #00000067;
+  &:hover {
+    color: #000;
+  }
+}
