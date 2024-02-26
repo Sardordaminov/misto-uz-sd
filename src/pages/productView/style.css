@@ -28,7 +28,7 @@
 .page-product {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .page-product-imgBx {
   position: relative;
@@ -58,4 +58,55 @@
     background-color: #ededed;
     box-shadow: 4px 4px 10px -7px #00000040 inset;
   }
+}
+.page-product-item {
+  display: flex;
+  flex-direction: column;
+}
+.page-product-item-color p {
+  color: #717171;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.page-product-item-color p span {
+  color: #000;
+  font-weight: bolder;
+}
+.page-product-item-color img {
+  margin-top: 20px;
+  width: 64px;
+  height: 64px;
+}
+.page-product-item-size {
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.page-product-item-size p {
+  font-size: 15px;
+  color: #717171;
+  letter-spacing: 1px;
+}
+.page-product-item-size div {
+  margin: 20px 0px;
+}
+.page-product-item-size div button {
+  height: 40px;
+  width: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  background-color: #f8f8f8;
+  color: #575757;
+  margin-right: 15px;
+  cursor: pointer;
+  &:hover {
+    border: 2px solid #000;
+  }
+}
+.page-product-item-size div button.active {
+  border: 2px solid #000;
+}
+.fa-clothes-hanger {
+  margin-right: 5px;
 }
