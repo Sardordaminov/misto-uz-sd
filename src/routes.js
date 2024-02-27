@@ -19,7 +19,7 @@ export const Routes = () => {
                 { path: "/cart", element: <Cart /> },
                 { path: "/favorites", element: <Favorites /> },
                 { path: "/login", element: <Login /> },
-                { path: "/categories/:category/:id", element: <ProductViewW /> },
+                { path: "/categories-woman/:category/:id", element: <ProductViewW /> },
                 { path: "/categories-men/:category/:id", element: <ProductViewM /> },
                 { path: "*", element: <Error /> },
             ],
