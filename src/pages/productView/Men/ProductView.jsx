@@ -60,6 +60,7 @@ function ProductView() {
                             </div>
                             <div className="page-product">
                                 <div className="page-product-imgBx">
+                                    {item.id === 2 ? (<div className='card-sale'>{item.sale}</div>) : ''}
                                     <div className="page-product-imgBx-item">
                                         <button>
                                             <i className="fa-solid fa-chevron-left"></i>
@@ -110,13 +111,13 @@ function ProductView() {
                                     <div className="page-product-checkout">
                                         <p className="page-product-checkout-title">GUARANTEED SAFE CHECKOUT</p>
                                         <div>
-                                            <img src={image1} alt="img" />
-                                            <img src={image2} alt="img" />
-                                            <img src={image3} alt="img" />
-                                            <img src={image4} alt="img" />
-                                            <img src={image5} alt="img" />
-                                            <img src={image6} alt="img" />
-                                            <img src={image7} alt="img" />
+                                            <a target="_blank" href="https://stripe.com/"><img src={image1} alt="img" /></a>
+                                            <a target="_blank" href="https://www.kingston.com/"><img src={image2} alt="img" /></a>
+                                            <a target="_blank" href="https://paypal.com/"><img src={image3} alt="img" /></a>
+                                            <a target="_blank" href="https://visa.com/"><img src={image4} alt="img" /></a>
+                                            <a target="_blank" href="https://www.mastercard.ru/ru-ru.html"><img src={image5} alt="img" /></a>
+                                            <a target="_blank" href="https://www.discoverglobalnetwork.com/"><img src={image6} alt="img" /></a>
+                                            <a target="_blank" href="https://www.americanexpress.com/"><img src={image7} alt="img" /></a>
                                         </div>
                                     </div>
                                 </div>
