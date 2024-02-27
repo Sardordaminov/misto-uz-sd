@@ -1,12 +1,13 @@
 import React from "react";
 import Home from "./pages/home/Home";
-import { Cart, Product } from "./pages/cart/Cart";
+import { Cart } from "./pages/cart/Cart";
 import Login from "./pages/login/Login";
 import Profile from "./pages/profile/Profile";
 import Error from "./pages/not-found/NotFound";
 import { useRoutes } from "react-router-dom";
 import Favorites from "./pages/favorites/Favorites";
-import ProductView from "./pages/productView/Men/ProductView";
+import ProductViewW from "./pages/productView/women/ProductViewW";
+import ProductViewM from "./pages/productView/men/ProductViewM";
 
 export const Routes = () => {
     const token = localStorage.getItem("access");
@@ -18,8 +19,8 @@ export const Routes = () => {
                 { path: "/cart", element: <Cart /> },
                 { path: "/favorites", element: <Favorites /> },
                 { path: "/login", element: <Login /> },
-                { path: "/categories/:category/:id", element: <ProductView /> },
-                // { path: "/categories/:category", element: <ProductView /> },
+                { path: "/categories/:category/:id", element: <ProductViewW /> },
+                { path: "/categories-men/:category/:id", element: <ProductViewM /> },
                 { path: "*", element: <Error /> },
             ],
         },

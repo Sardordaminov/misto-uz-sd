@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { products } from "../../../data/data";
+import { productsMen } from "../../../data/data";
 import changeTitle from "../../../components/TitleChange/change-title";
 import { useParams, Link } from "react-router-dom";
 import NotFound from "../../not-found/NotFound";
@@ -16,7 +16,7 @@ import image7 from '../../../assets/products/productView/image7.png'
 function ProductView() {
     const { id, category } = useParams();
     const [size, setSize] = useState("S");
-    const productsView = products;
+    const productsView = productsMen;
     const product = productsView
         .filter((filteredProduct) => filteredProduct.category == category)
         .filter((product) => product.id == id);
@@ -111,13 +111,13 @@ function ProductView() {
                                     <div className="page-product-checkout">
                                         <p className="page-product-checkout-title">GUARANTEED SAFE CHECKOUT</p>
                                         <div>
-                                            <a target="_blank" href="https://stripe.com/"><img src={image1} alt="img" /></a>
-                                            <a target="_blank" href="https://www.kingston.com/"><img src={image2} alt="img" /></a>
-                                            <a target="_blank" href="https://paypal.com/"><img src={image3} alt="img" /></a>
-                                            <a target="_blank" href="https://visa.com/"><img src={image4} alt="img" /></a>
-                                            <a target="_blank" href="https://www.mastercard.ru/ru-ru.html"><img src={image5} alt="img" /></a>
-                                            <a target="_blank" href="https://www.discoverglobalnetwork.com/"><img src={image6} alt="img" /></a>
-                                            <a target="_blank" href="https://www.americanexpress.com/"><img src={image7} alt="img" /></a>
+                                            <a target="_blank" rel="noreferrer" href="https://stripe.com/"><img src={image1} alt="img" /></a>
+                                            <a target="_blank" rel="noreferrer" href="https://www.kingston.com/"><img src={image2} alt="img" /></a>
+                                            <a target="_blank" rel="noreferrer" href="https://paypal.com/"><img src={image3} alt="img" /></a>
+                                            <a target="_blank" rel="noreferrer" href="https://visa.com/"><img src={image4} alt="img" /></a>
+                                            <a target="_blank" rel="noreferrer" href="https://www.mastercard.ru/ru-ru.html"><img src={image5} alt="img" /></a>
+                                            <a target="_blank" rel="noreferrer" href="https://www.discoverglobalnetwork.com/"><img src={image6} alt="img" /></a>
+                                            <a target="_blank" rel="noreferrer" href="https://www.americanexpress.com/"><img src={image7} alt="img" /></a>
                                         </div>
                                     </div>
                                 </div>
