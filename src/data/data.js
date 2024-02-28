@@ -214,3 +214,139 @@ export const productsMen = [
         category: 'Men'
     },
 ]
+
+export const filterData = [
+    {
+        id: 1,
+        title: 'Color',
+        item: [
+            {
+                id: 1,
+                color: 'black',
+                colorName: 'Black'
+            },
+            {
+                id: 2,
+                color: 'cyan',
+                colorName: 'Cyan'
+            },
+            {
+                id: 3,
+                color: 'green',
+                colorName: 'Green'
+            },
+            {
+                id: 4,
+                color: 'grey',
+                colorName: 'Grey'
+            },
+            {
+                id: 5,
+                color: 'pink',
+                colorName: 'Pink'
+            },
+            {
+                id: 6,
+                color: 'white',
+                colorName: 'White'
+            },
+            {
+                id: 7,
+                color: 'blue',
+                colorName: 'Blue'
+            },
+        ]
+    },
+    {
+        id: 2,
+        title: 'Size',
+        item: [
+            {
+                id: 1,
+                size: "XL"
+            },
+            {
+                id: 2,
+                size: "L"
+            },
+            {
+                id: 3,
+                size: "M"
+            },
+            {
+                id: 4,
+                size: "S"
+            },
+            {
+                id: 5,
+                size: "XS"
+            },
+
+        ]
+    },
+    {
+        id: 3,
+        title: 'Brand',
+        item: [
+            {
+                id: 1,
+                brandName: 'Ck'
+            },
+            {
+                id: 2,
+                brandName: 'H&M'
+            },
+            {
+                id: 3,
+                brandName: 'Kalles'
+            },
+            {
+                id: 4,
+                brandName: 'Levis'
+            },
+            {
+                id: 5,
+                brandName: 'Monki'
+            },
+            {
+                id: 6,
+                brandName: 'Nike'
+            },
+        ]
+    },
+    {
+        id: 4,
+        title: 'Price',
+        item: [
+            {
+                id: 1,
+                price: '$1200+'
+            },
+            {
+                id: 2,
+                price: '$600',
+                priceFrom: '-$1200'
+            },
+            {
+                id: 3,
+                price: '$300',
+                priceFrom: '-$600'
+            },
+            {
+                id: 4,
+                price: '$150',
+                priceFrom: '-$300'
+            },
+            {
+                id: 5,
+                price: '$50',
+                priceFrom: '-$150'
+            },
+            {
+                id: 6,
+                price: '$7',
+                priceFrom: '-$50'
+            },
+        ]
+    },
+]

@@ -19,8 +19,8 @@ const Navbar = () => {
                     </div>
                     <div className="bars-menu-ul">
                         <NavLink to='/aboutus'><li>About Us</li></NavLink>
-                        <NavLink to='/women' className='ul-women ul-main'><li>Women</li></NavLink>
-                        <NavLink to='/men' className='ul-men ul-main'><li>Men</li></NavLink>
+                        <NavLink to='/categories-woman/Woman' className='ul-women ul-main'><li>Women</li></NavLink>
+                        <NavLink to='/ccategories-men/Men' className='ul-men ul-main'><li>Men</li></NavLink>
                         <NavLink to='/beauty'><li>Beauty</li></NavLink>
                         <NavLink to='/accessories'><li>Accessories</li></NavLink>
                         <NavLink to='/blog'><li>Blog</li></NavLink>
@@ -37,11 +37,11 @@ const Navbar = () => {
                 </div>
                 <div className="ul">
                     <NavLink to='/aboutus'><li>About Us</li></NavLink>
-                    <NavLink to='/women' className='ul-women ul-main'>
+                    <NavLink to='/categories-woman/Woman' className='ul-women ul-main'>
                         <li>Women</li>
                         <img className='polygon-icon' src={PolygonIcon} alt="polygon" />
                     </NavLink>
-                    <NavLink to='/men' className='ul-men ul-main'>
+                    <NavLink to='/categories-men/Men' className='ul-men ul-main'>
                         <li>Men</li>
                         <img className='polygon-icon' src={PolygonIcon} alt="polygon" />
                     </NavLink>

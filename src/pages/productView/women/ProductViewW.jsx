@@ -34,7 +34,7 @@ function ProductView() {
                             <div className="location">
                                 <Link to="/">Home</Link>
                                 <i class="fa-solid fa-caret-right"></i>
-                                <Link to={`/categories/${item.category}`}>{item.category}</Link>
+                                <Link to={`/categories-woman/${item.category}`}>{item.category}</Link>
                                 <i class="fa-solid fa-caret-right"></i>
                                 {item.name}
                             </div>

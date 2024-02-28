@@ -8,6 +8,8 @@ import { useRoutes } from "react-router-dom";
 import Favorites from "./pages/favorites/Favorites";
 import ProductViewW from "./pages/productView/women/ProductViewW";
 import ProductViewM from "./pages/productView/men/ProductViewM";
+import CategoryM from "./pages/categoryPage/men/CategoryM";
+import CategoryW from "./pages/categoryPage/women/CategoryW";
 
 export const Routes = () => {
     const token = localStorage.getItem("access");
@@ -19,6 +21,8 @@ export const Routes = () => {
                 { path: "/cart", element: <Cart /> },
                 { path: "/favorites", element: <Favorites /> },
                 { path: "/login", element: <Login /> },
+                { path: "/categories-woman/:category", element: <CategoryW /> },
+                { path: "/categories-men/:category", element: <CategoryM /> },
                 { path: "/categories-woman/:category/:id", element: <ProductViewW /> },
                 { path: "/categories-men/:category/:id", element: <ProductViewM /> },
                 { path: "*", element: <Error /> },
