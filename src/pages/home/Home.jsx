@@ -80,7 +80,7 @@ const Home = () => {
         </div>
       </div>
       <ProductsListWomen />
-      <ProductsListMen />
+      <ProductsListMen /> 
       <div className="home-advertisement">
         <div className="home-advertisement-item">
           <div>

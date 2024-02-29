@@ -14,13 +14,22 @@
   position: relative;
   overflow-y: hidden;
   width: 100%;
-  min-height: 65px;
+  min-height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 20px 0px;
 }
+.item-top {
+  width: 100%;
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .category-page-products-item.active {
-  min-height: 600px;
+  min-height: 430px;
+  overflow-y: visible;
 }
 .filter-openBtn {
   color: #717171;
@@ -51,8 +60,9 @@
   color: #717171;
 }
 .filter-modal {
-  position: absolute;
   width: 100%;
+  min-height: 318px;
+  margin-top: 40px;
 }
 .category-page-products .products {
   width: 100%;

@@ -18,15 +18,17 @@ function CategoryM() {
             <div className="category-page-title"><h1>MEN</h1></div>
             <div className='category-page-products'>
                 <div className={`category-page-products-item ${filter && 'active'}`}>
-                    <div onClick={() => setFilter(!filter)} className="filter-openBtn"><i className={`${filter ? "fa-light fa-xmark-large" : "fa-duotone fa-sliders-up"}`}></i> FILTER</div>
-                    <div className='view-style-main'>
-                        <button><i class="fa-regular fa-bars"></i></button>
-                        <button><i class="fa-regular fa-grid-2"></i></button>
+                    <div className='item-top'>
+                        <div onClick={() => setFilter(!filter)} className="filter-openBtn"><i className={`${filter ? "fa-light fa-xmark-large" : "fa-duotone fa-sliders-up"}`}></i> FILTER</div>
+                        <div className='view-style-main'>
+                            <button><i class="fa-regular fa-bars"></i></button>
+                            <button><i class="fa-regular fa-grid-2"></i></button>
+                        </div>
+                        <select className='view-style'>
+                            <option value="bestsellers">BESTSELLERS</option>
+                            <option value="topitems">TOPITEMS</option>
+                        </select>
                     </div>
-                    <select className='view-style'>
-                        <option value="bestsellers">BESTSELLERS</option>
-                        <option value="topitems">TOPITEMS</option>
-                    </select>
                     {filter ? (
                         <div className='filter-modal'><FilterItem /></div>
                     ) : ''}
