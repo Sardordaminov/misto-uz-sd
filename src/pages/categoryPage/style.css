@@ -28,7 +28,7 @@
   justify-content: space-between;
 }
 .category-page-products-item.active {
-  min-height: 430px;
+  min-height: 500px;
   overflow-y: visible;
 }
 .filter-openBtn {
