@@ -18,9 +18,10 @@ const Navbar = () => {
                         <p><NavLink to='/login'>log in</NavLink>/<NavLink to='/signup'>sign up</NavLink></p>
                     </div>
                     <div className="bars-menu-ul">
+                        <NavLink to='/'><li>Home</li></NavLink>
                         <NavLink to='/aboutus'><li>About Us</li></NavLink>
                         <NavLink to='/categories-woman/Woman' className='ul-women ul-main'><li>Women</li></NavLink>
-                        <NavLink to='/ccategories-men/Men' className='ul-men ul-main'><li>Men</li></NavLink>
+                        <NavLink to='/categories-men/Men' className='ul-men ul-main'><li>Men</li></NavLink>
                         <NavLink to='/beauty'><li>Beauty</li></NavLink>
                         <NavLink to='/accessories'><li>Accessories</li></NavLink>
                         <NavLink to='/blog'><li>Blog</li></NavLink>
@@ -53,7 +54,7 @@ const Navbar = () => {
                 <div className="nav-item">
                     <button className='nav-search btn'><i className="fa-light fa-magnifying-glass"></i></button>
                     <NavLink to='/favorites' className='to-favorites btn'><i className="fa-light fa-heart"></i></NavLink>
-                    <NavLink to={localStorage.getItem('access') ? '/profile/info' : '/login'} className='navbar-profile btn'>
+                    <NavLink to={localStorage.getItem('access') ? '/profile/info' : '/signup'} className='navbar-profile btn'>
                         <i className="fa-light fa-user"></i>
                     </NavLink>
                     <NavLink to='/cart' className='to-orders btn'><i className="fa-light fa-bag-shopping"></i></NavLink>

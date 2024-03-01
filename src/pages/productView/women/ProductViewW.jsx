@@ -12,15 +12,24 @@ import image4 from '../../../assets/products/productView/image4.png'
 import image5 from '../../../assets/products/productView/image5.png'
 import image6 from '../../../assets/products/productView/image6.png'
 import image7 from '../../../assets/products/productView/image7.png'
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../../slice/women/cartSlice";
+
 
 function ProductView() {
+    const dispatch = useDispatch();
     const { id, category } = useParams();
     const [size, setSize] = useState("S");
     const productsView = products;
     const product = productsView
         .filter((filteredProduct) => filteredProduct.category == category)
         .filter((product) => product.id == id);
-    changeTitle(product?.map((name) => name.name));
+    changeTitle(product?.map((name) => name.name))
+
+    const handleAddToCart = (item) => {
+        dispatch(addToCart(item))
+    }
+
     return (
         <>
             {product?.length === 0 ? (
@@ -90,7 +99,7 @@ function ProductView() {
                                     </div>
                                     <div className="page-product-add-section">
                                         <h1>${item.price}</h1>
-                                        <div className="product-addBtn">ADD TO CARD</div>
+                                        <div className="product-addBtn" onClick={() => handleAddToCart(item)}>ADD TO CARD</div>
                                         <button><i class="fa-thin fa-heart"></i></button>
                                         <button><i class="fa-light fa-scale-balanced"></i></button>
                                     </div>

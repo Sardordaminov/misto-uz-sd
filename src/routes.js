@@ -1,7 +1,8 @@
 import React from "react";
 import Home from "./pages/home/Home";
-import { Cart } from "./pages/cart/Cart";
+import Cart from "./pages/cart/Cart";
 import Login from "./pages/login/Login";
+import SignUp from './pages/signup/SignUp'
 import Profile from "./pages/profile/Profile";
 import Error from "./pages/not-found/NotFound";
 import { useRoutes } from "react-router-dom";
@@ -21,6 +22,7 @@ export const Routes = () => {
                 { path: "/cart", element: <Cart /> },
                 { path: "/favorites", element: <Favorites /> },
                 { path: "/login", element: <Login /> },
+                { path: "/signup", element: <SignUp /> },
                 { path: "/categories-woman/:category", element: <CategoryW /> },
                 { path: "/categories-men/:category", element: <CategoryM /> },
                 { path: "/categories-woman/:category/:id", element: <ProductViewW /> },
@@ -34,6 +36,10 @@ export const Routes = () => {
             children: [
                 { path: "/", element: <Home /> },
                 { path: "/cart", element: <Cart /> },
+                { path: "/categories-woman/:category", element: <CategoryW /> },
+                { path: "/categories-men/:category", element: <CategoryM /> },
+                { path: "/categories-woman/:category/:id", element: <ProductViewW /> },
+                { path: "/categories-men/:category/:id", element: <ProductViewM /> },
                 { path: "/favorites", element: <Favorites /> },
                 { path: "/profile/info", element: <Profile /> },
                 { path: "*", element: <Error /> },
