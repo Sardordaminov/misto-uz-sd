@@ -6,10 +6,12 @@ const Login = () => {
   const [modalActive, setModalActive] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
 
   const handleLostPasswordClick = () => {};
 
-  const handleLoginClick = () => {};
+  function handleLoginClick() {}
   const handleNewCustomerClick = () => {};
 
   return (
@@ -24,6 +26,7 @@ const Login = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className="inp"
+          required
         />
       </div>
       <label>Password</label>
@@ -33,6 +36,7 @@ const Login = () => {
           placeholder="Your password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          required
         />
       </div>
       <p onClick={() => handleLostPasswordClick()}>Lost your password?</p>
@@ -51,70 +55,62 @@ const Login = () => {
       </div>
       <p onClick={() => handleNewCustomerClick()}>New Customer?</p>
 
-      <button className="create-login-btn" onClick={() => setModalActive(true)}>
+      <button className="create-new-btn" onClick={() => setModalActive(true)}>
         Create Your Account
       </button>
 
       <Modal active={modalActive} setActive={setModalActive}>
-        <h2>REGISTRATION</h2>
-        <form class="row g-3">
-          <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">
-              Email
-            </label>
-            <input type="email" class="form-control" id="inputEmail4" />
-          </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">
-              Password
-            </label>
-            <input type="password" class="form-control" id="inputPassword4" />
-          </div>
-          <div class="col-12">
-            <label for="inputAddress" class="form-label">
-              Address
-            </label>
+        <h2>Registration</h2>
+        <form>
+          <div className="form-group">
+            <label htmlFor="email">Email:</label>
             <input
-              type="text"
-              class="form-control"
-              id="inputAddress"
-              placeholder="1234 Main St"
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="form-control"
+              required
             />
           </div>
-          <div class="col-md-6">
-            <label for="inputCity" class="form-label">
-              City
-            </label>
-            <input type="text" class="form-control" id="inputCity" />
+          <div className="form-group">
+            <label htmlFor="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="form-control"
+              required
+            />
           </div>
-          <div class="col-md-4">
-            <label for="inputState" class="form-label">
-              State
-            </label>
-            <select id="inputState" class="form-select">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
+          <div className="form-group">
+            <label htmlFor="confirmPassword">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="Confirm your password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              className="form-control"
+              required
+            />
           </div>
-          <div class="col-md-2">
-            <label for="inputZip" class="form-label">
-              Zip
-            </label>
-            <input type="text" class="form-control" id="inputZip" />
+          <div className="form-group">
+            <label htmlFor="fullName">Phone Number:</label>
+            <input
+              type="tel"
+              placeholder="Phone number"
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
+              required
+            />
           </div>
-          <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck" />
-              <label class="form-check-label" for="gridCheck">
-                Check me out
-              </label>
-            </div>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">
-              Sign in
-            </button>
-          </div>
+          <button type="submit" className="btn-primary">
+            Register
+          </button>
         </form>
       </Modal>
     </div>
