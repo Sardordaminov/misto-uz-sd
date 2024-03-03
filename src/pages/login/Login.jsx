@@ -9,10 +9,10 @@ const Login = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
 
-  const handleLostPasswordClick = () => {};
+  const handleLostPasswordClick = () => { };
 
-  function handleLoginClick() {}
-  const handleNewCustomerClick = () => {};
+  function handleLoginClick() { }
+  const handleNewCustomerClick = () => { };
 
   return (
     <div className="login-page">

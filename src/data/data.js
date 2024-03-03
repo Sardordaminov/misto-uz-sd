@@ -25,7 +25,7 @@ export const products = [
         color: 'Blue',
         count: 1,
         selected: true,
-        isFavourite: true,
+        isFavourite: false,
         category: 'Women'
     },
     {
@@ -39,7 +39,7 @@ export const products = [
         color: 'Green',
         count: 1,
         selected: true,
-        isFavourite: true,
+        isFavourite: false,
         category: 'Women'
     },
     {
@@ -51,7 +51,7 @@ export const products = [
         color: 'Cream',
         count: 1,
         selected: true,
-        isFavourite: true,
+        isFavourite: false,
         category: 'Women'
     },
     {
@@ -63,7 +63,7 @@ export const products = [
         color: 'White',
         count: 1,
         selected: true,
-        isFavourite: true,
+        isFavourite: false,
         category: 'Women'
     },
     {
@@ -75,7 +75,7 @@ export const products = [
         color: 'Gray',
         count: 1,
         selected: true,
-        isFavourite: true,
+        isFavourite: false,
         category: 'Women'
     },
     {
@@ -87,7 +87,7 @@ export const products = [
         color: 'Black',
         count: 1,
         selected: true,
-        isFavourite: true,
+        isFavourite: false,
         category: 'Women'
     },
     {
@@ -99,7 +99,7 @@ export const products = [
         color: 'Cream',
         count: 1,
         selected: true,
-        isFavourite: true,
+        isFavourite: false,
         category: 'Women'
     },
     {
@@ -111,7 +111,7 @@ export const products = [
         color: 'Cream',
         count: 1,
         selected: true,
-        isFavourite: true,
+        isFavourite: false,
         category: 'Women'
     },
 ]
