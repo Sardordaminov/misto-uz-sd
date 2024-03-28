@@ -12,8 +12,9 @@ import image4 from '../../../assets/products/productView/image4.png'
 import image5 from '../../../assets/products/productView/image5.png'
 import image6 from '../../../assets/products/productView/image6.png'
 import image7 from '../../../assets/products/productView/image7.png'
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../../slice/women/cartSlice";
+import { addToFav, removeFromFav } from "../../../slice/women/favoritesSlice";
 
 
 function ProductView() {
@@ -28,6 +29,20 @@ function ProductView() {
 
     const handleAddToCart = (item) => {
         dispatch(addToCart(item))
+    }
+    function AddToFavBtn({ product }) {
+        const favorites = useSelector(state => state.favorites.filter(fav => fav.id === product.id))
+        const handleAddToFav = () => {
+            dispatch(addToFav(product))
+        }
+        const handleRemoveFromFav = () => {
+            dispatch(removeFromFav(product.id))
+        }
+        return (
+            <button onClick={favorites.length !== 0 ? handleRemoveFromFav : handleAddToFav}>
+                {favorites.length !== 0 ? <i class="fa-solid fa-heart"></i> : <i class="fa-thin fa-heart"></i>}
+            </button>
+        )
     }
 
     return (
@@ -100,7 +115,7 @@ function ProductView() {
                                     <div className="page-product-add-section">
                                         <h1>${item.price}</h1>
                                         <div className="product-addBtn" onClick={() => handleAddToCart(item)}>ADD TO CARD</div>
-                                        <button><i class="fa-thin fa-heart"></i></button>
+                                        <AddToFavBtn product={item} />
                                         <button><i class="fa-light fa-scale-balanced"></i></button>
                                     </div>
                                     <div className="page-product-opportunities">

@@ -82,6 +82,9 @@ img {
     background-color: #ececec;
   }
 }
+.product-card-actions button .fa-solid {
+  color: #e91e63;
+}
 .product-card-imgbx:hover .product-card-actions {
   transition: 0.2s ease;
   bottom: 0%;

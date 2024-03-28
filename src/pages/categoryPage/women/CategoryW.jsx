@@ -7,7 +7,6 @@ import '../style.css'
 
 function CategoryW() {
     const [filter, setFilter] = useState(false)
-    console.log(filter);
     return (
         <div className='category-page'>
             <div className="location">

@@ -163,6 +163,9 @@
     background-color: #ececec;
   }
 }
+.page-product-add-section .fa-solid.fa-heart{
+  color: #e91e63;
+}
 .page-product-opportunities {
   padding: 35px 0px;
   display: flex;
