@@ -8,9 +8,9 @@ import homeimg3 from "../../assets/header-photos/photo3.jpg";
 import homeimg4 from "../../assets/header-photos/photo4.jpg";
 import advertisement_img1 from "../../assets/advertisement1.jpg";
 import advertisement_img2 from "../../assets/advertisement2.jpg";
-import blog_cart_img1 from '../../assets/blog/blog-photo1.jpg'
-import blog_cart_img2 from '../../assets/blog/blog-photo2.jpg'
-import blog_cart_img3 from '../../assets/blog/blog-photo3.jpg'
+import blog_cart_img1 from "../../assets/blog/blog-photo1.jpg";
+import blog_cart_img2 from "../../assets/blog/blog-photo2.jpg";
+import blog_cart_img3 from "../../assets/blog/blog-photo3.jpg";
 
 const Home = () => {
   return (
@@ -80,7 +80,7 @@ const Home = () => {
         </div>
       </div>
       <ProductsListWomen />
-      <ProductsListMen /> 
+      <ProductsListMen />
       <div className="home-advertisement">
         <div className="home-advertisement-item">
           <div>
@@ -117,21 +117,30 @@ const Home = () => {
             <img src={blog_cart_img1} alt="latest-blogs-cart-img" />
             <div className="latest-blogs-cart-item">
               <h1>THE EASIEST WAY TO BREAK</h1>
-              <p>But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor</p>
+              <p>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleas and praising pain was bor
+              </p>
             </div>
           </div>
           <div className="latest-blogs-cart">
             <img src={blog_cart_img2} alt="latest-blogs-cart-img" />
             <div className="latest-blogs-cart-item">
               <h1>WEDDING SEASON</h1>
-              <p>But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor</p>
+              <p>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleas and praising pain was bor
+              </p>
             </div>
           </div>
           <div className="latest-blogs-cart">
             <img src={blog_cart_img3} alt="latest-blogs-cart-img" />
             <div className="latest-blogs-cart-item">
               <h1>RECENT FAVORITES ON REPEAT</h1>
-              <p>But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor</p>
+              <p>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleas and praising pain was bor
+              </p>
             </div>
           </div>
         </div>
