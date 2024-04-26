@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import './style.css'
 import {
@@ -43,8 +43,8 @@ const Page = () => {
       dispatch(removeFromFav(product.id))
     }
     return (
-      <button>
-        {FavItems.length !== 0 ? <i class="fa-solid fa-heart" onClick={handleRemoveFromFav}></i> : <i class="fa-thin fa-heart" onClick={handleAddToFav}></i>}
+      <button onClick={FavItems.length !== 0 ? handleRemoveFromFav : handleAddToFav}>
+        {FavItems.length !== 0 ? <i class="fa-solid fa-heart"></i> : <i class="fa-thin fa-heart"></i>}
       </button>
     )
   }
@@ -72,7 +72,7 @@ const Page = () => {
                 <div className="product-title"><h1>{el.name}</h1><p>{el.descr}</p></div>
                 <div>
                   <AddToFavBtn product={el} />
-                  <button onClick={() => handleDeleteItem(el.id)}>delete</button>
+                  <button onClick={() => handleDeleteItem(el.id)}><i class="fa-solid fa-trash"></i> Delete</button>
                 </div>
               </div>
               <div className="cart-page-product-item">
@@ -81,7 +81,7 @@ const Page = () => {
                   {el.quantity}
                   <button onClick={() => handleQuantityIncrement(el.id)}>plus</button>
                 </div>
-                <div className="product-price"><h2>${el.price}</h2></div>
+                <div className="product-price"><h2>${el.price * el.quantity}.00</h2></div>
               </div>
             </div>
           ))}
